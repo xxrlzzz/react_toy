@@ -1,0 +1,70 @@
+.RelatedPost {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.RelatedBackgroundImage {
+}
+
+.RelatedBackground {
+  background-repeat: repeat, no-repeat;
+  background-color: #ededed;
+  background-position: 50%;
+  background-size: auto 100%;
+  height: 160px;
+  width: 100%;
+  position: static;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  background-image: url(../link-backgrounds/deep-sea.png);
+}
+
+@keyframes background-move {
+  0% {
+    background-position: 50%;
+  }
+  to {
+    background-position: -1000px;
+  }
+}
+
+.RelatedBackground:hover {
+  -webkit-animation: background-move 50s linear infinite forwards;
+  animation: background-move 50s linear infinite forwards;
+
+  /* animation: background-flip 10s linear infinite forwards; */
+}
+
+.RelatedTitle {
+  background: #fff;
+  padding: 14px 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 22px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+  color: #333 !important;
+}
+
+.RelatedWrapper {
+  position: relative;
+  background: #fff;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 7px;
+}

@@ -1,0 +1,90 @@
+.ItemImage {
+  display: block;
+  margin: 15px auto;
+  height: 120px;
+  max-width: 121%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ItemName {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ItemCost {
+  font-size: 20px;
+  color: #24c486;
+}
+
+.ItemControl {
+  font-size: 20px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  margin-top: 15px;
+}
+
+.ItemSell {
+  border: none;
+  color: #333;
+  cursor: auto;
+  touch-action: manipulation;
+}
+.ItemSellDisable {
+  background: #f1f2f6 !important;
+}
+
+.ItemSellEnable {
+  background: linear-gradient(180deg, #f53b82, #f53b57);
+}
+
+.ItemCount {
+  font-size: 16px;
+  text-align: center;
+  padding: 9px 12px;
+  border-radius: 3px;
+  border: 1px solid #b2bec3;
+  color: #333;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ItemBuy {
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.ItemBuyDisable {
+  background: #f1f2f6 !important;
+}
+
+.ItemBuyEnable {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+}
+
+.ItemCell {
+  max-width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 15px;
+  width: 100%;
+}

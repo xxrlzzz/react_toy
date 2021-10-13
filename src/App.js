@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
+import Footer from "./components/Footer";
+import { useTranslation } from "react-i18next";
 
-function App() {
+export default function App() {
+  const { t } = useTranslation();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="Content">
+        <div className="Profile">
+          <img
+            src="https://neal.fun/spend/billgates.jpg"
+            alt="billgates"
+            className="ProfileImage"
+            style={{ "border-radius": "50%", display: "block" }}
+          ></img>
+          {t("gameName")}
+        </div>
+        <ProductList />
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
