@@ -1,0 +1,45 @@
+language: node_js
+
+node_js:
+  16
+
+cache: 
+  yarn: true
+  directories:
+    - public
+    - .cache
+    
+script:
+  - yarn build # Generate static HTML files
+
+before-install: 
+ # if "install" is overridden
+  # Repo for Yarn
+  - sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
+  - echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq yarn
+
+install:
+  yarn
+
+# Here is the magic part
+deploy:
+  # Use Github pages deploy process
+  provider: pages
+  # Keep builded pages
+  skip-cleanup: true
+  # Directory where your generated files are located
+  local_dir: public
+  # Github security/auth token
+  github-token: $GITHUB_TOKEN
+  # Incremental commit to keep old build/files from previous deployments
+  keep-history: true
+  # Git branch on which it should deploy (master, gh-pages, foo...)
+  target_branch: gh-pages
+  on:
+    # Which branch on commit/push will trigger deployment
+    branch: master
+
+notifications:
+  email: false
