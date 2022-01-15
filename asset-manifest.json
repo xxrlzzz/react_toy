@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react_toy/static/css/main.754ff65a.chunk.css",
+    "main.js": "/react_toy/static/js/main.a635e6ee.chunk.js",
+    "main.js.map": "/react_toy/static/js/main.a635e6ee.chunk.js.map",
+    "runtime-main.js": "/react_toy/static/js/runtime-main.527c996d.js",
+    "runtime-main.js.map": "/react_toy/static/js/runtime-main.527c996d.js.map",
+    "static/css/2.f7861fd5.chunk.css": "/react_toy/static/css/2.f7861fd5.chunk.css",
+    "static/js/2.ae9910c6.chunk.js": "/react_toy/static/js/2.ae9910c6.chunk.js",
+    "static/js/2.ae9910c6.chunk.js.map": "/react_toy/static/js/2.ae9910c6.chunk.js.map",
+    "static/js/3.62dbe472.chunk.js": "/react_toy/static/js/3.62dbe472.chunk.js",
+    "static/js/3.62dbe472.chunk.js.map": "/react_toy/static/js/3.62dbe472.chunk.js.map",
+    "index.html": "/react_toy/index.html",
+    "precache-manifest.2230611f3b2a2a388178e25d0149a4a9.js": "/react_toy/precache-manifest.2230611f3b2a2a388178e25d0149a4a9.js",
+    "service-worker.js": "/react_toy/service-worker.js",
+    "static/css/2.f7861fd5.chunk.css.map": "/react_toy/static/css/2.f7861fd5.chunk.css.map",
+    "static/css/main.754ff65a.chunk.css.map": "/react_toy/static/css/main.754ff65a.chunk.css.map",
+    "static/js/2.ae9910c6.chunk.js.LICENSE.txt": "/react_toy/static/js/2.ae9910c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.527c996d.js",
+    "static/css/2.f7861fd5.chunk.css",
+    "static/js/2.ae9910c6.chunk.js",
+    "static/css/main.754ff65a.chunk.css",
+    "static/js/main.a635e6ee.chunk.js"
+  ]
+}
